@@ -1,0 +1,17 @@
+ALGORITHM algorithm_name
+VAR
+   A : ARRAY_OF INTEGER [10];
+   int Position
+   int valueToInsert
+BEGIN
+FOR i FROM 1 TO A.length DO
+   valueToInsert = A[i]
+   holePosition = i
+   WHILE Position > 0 and A[Position-1] > valueToInsert DO
+         A[Position] = A[Position-1]
+         Position = Position -1
+   END_WHILE
+   A[Position] = valueToInsert
+END_FOR
+	
+END 
